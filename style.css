@@ -52,6 +52,42 @@ body {
   gap: 4rem;
 }
 
+@media (max-width: 700px) {
+  .main-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0;
+    /* height: 100vh; */
+  }
+
+  :root {
+    --fs-1: 1rem;
+    --fs-2: 1.125rem;
+    --fs-3: 1.266rem;
+    --fs-4: 1.424rem;
+    --fs-5: 1.602rem;
+    --fs-6: 1.802rem;
+    --fs-7: 2.027rem;
+    --fs-8: 2.281rem;
+    --fs-9: 2.566rem;
+    --fs-10: 2.887rem;
+  }
+
+  .page-header__logo {
+    width: min(50%, 20rem);
+  }
+
+  .page-header {
+    margin-bottom: 3rem;
+  }
+
+  .main-hero__image {
+    margin: 0 auto;
+  }
+}
+
 .main-hero__image {
   width: 90%;
 }
@@ -97,7 +133,7 @@ body {
   display: flex;
   justify-content: end;
   gap: 1rem;
-  padding-right: 3rem;
+  padding-right: 0 3rem;
 }
 .main-hero__link {
   display: flex;
